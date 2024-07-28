@@ -1,0 +1,254 @@
+header, section, nav, main, footer, aside {
+    display: block;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color: #030512;
+}
+
+#animate-Bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: Holtwood One SC, Anton, sans-serif;
+    letter-spacing: 5px;
+    font-size: 2.986rem;
+    padding: 10px;
+    margin-bottom: 0%;
+    color: #f5efeb;
+}
+
+h2 {
+    font-size: 2.488rem;
+    color: #20304a;
+}
+
+h3 {
+    font-size: 2.074rem;
+    color: #20304a;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #20304a;
+}
+
+#wrap {
+    margin: 0 2% 2% 2%;
+    background-color: #ffffff;
+}
+
+#rightpic {
+    flex: auto;
+    width: 100%;
+}
+
+nav {
+    padding: 3%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: Sanchez, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 4% 0;
+    border-bottom: 1px solid #20304a;   
+    font-size: 30px;
+}
+
+main section div a {
+    text-decoration: none;
+}
+
+#email, #phone, #linkedin, #home, #education, #experience, #interest {
+    display: none;
+}
+
+nav a {
+    color: #2f4156;
+    font-size: 140%;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    font-family: Sanchez, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+aside p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+aside ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+}
+
+#email, #phone, #linkedin {
+    display: none;
+}
+
+#rightfoot {
+    position:relative;
+    float: right;
+    color: #ebf2fb;
+}
+
+#correlationPic, #fanshawePic, #amazonLogo{
+    width: 25%;
+    margin: 2% 0 0 0;
+}
+
+.steam-container {
+    height: 200px;
+}
+/* Tablet Style */
+@media screen and (min-width:425px) {
+    #email, #phone, #linkedin, #home, #education, #experience, #interest {
+        display: contents;
+    }
+
+    nav a {
+        font-size: 100%;
+    }
+
+    nav ul li {
+        height: 2rem;
+    }
+
+    aside p {
+        font-weight: bold;
+    }
+
+    #ref1, #ref2 {
+        text-decoration: none;
+        color: black;
+        text-wrap: nowrap;
+    }
+
+    #ref3 {
+        text-decoration: underline;
+        color: black;
+        text-wrap: nowrap;
+    }
+}
+
+/* Desktop Style */
+@media screen and (min-width:768px) {
+    body {
+        margin: 10% 10% 10% 10%;
+        max-width:max-content;
+    }
+
+    #wrap {
+        margin: 20px;
+    }
+
+    section{
+        margin: 20px;
+    }
+
+    main {
+        display: grid;
+    }
+
+    #hsymbol1, #hsymbol2, #hsymbol3, #hsymbol4, #fsymbol1, #fsymbol2, #fsymbol3 {
+        display: contents;
+    }
+
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    h2 {
+        margin: 80px 0 0 0;
+        text-align: center;
+        font-size: 300%;
+        grid-column: 1/ 3;
+        grid-row: 1 / 2;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+    nav {
+        padding: 0 10px 10px 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content:space-around;
+    }
+
+    nav li {
+        padding: 4% 0;
+        border-bottom: none;   
+        font-size: 100%;
+    }
+
+    nav ul li {
+        height: 1rem;
+        margin: 0 10px 0 30px;
+        padding: 10px;
+    }
+
+    #rightfoot {
+        margin: 0;
+    }
+
+    section {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        font-size: 20px;
+    }
+
+
+    #rightpic {
+        grid-column: 1 / 2;
+        grid-row: 2/ 3;
+        width: 100%;
+        margin: 50px 10% 10px 10px;
+    }
+
+    aside {
+        margin: 30px 10px 10px 10px;
+        grid-column: 1 / 2;
+        grid-row: 3 / 3;
+    }
+
+    main section {
+        margin: 5% 0 0 5%;
+    }
+
+
+
+}
