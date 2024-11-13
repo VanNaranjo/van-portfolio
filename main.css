@@ -230,7 +230,7 @@ aside ul {
 
     section {
         grid-column: 2 / 3;
-        grid-row: 2 / 4;
+        grid-row: 2 / 3;
         font-size: 20px;
         margin: 20px;
     }
@@ -238,7 +238,7 @@ aside ul {
     aside {
         margin: 30px 10px 10px 10px;
         grid-column: 1 / 2;
-        grid-row: 2/4;
+        grid-row: 2/3;
     }
 
     #prev {
