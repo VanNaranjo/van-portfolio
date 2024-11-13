@@ -299,4 +299,8 @@ aside ul {
         right: 10px;
     }
 
+    #statpic, #loanpic{
+        width: 80%;
+    }
+
 }
