@@ -82,7 +82,7 @@ main section div a {
     text-decoration: none;
 }
 
-#email, #phone, #linkedin, #home, #education, #experience, #interest {
+#email, #phone, #linkedin, #home, #education, #experience, #projects {
     display: none;
 }
 
@@ -130,7 +130,7 @@ aside ul {
 }
 /* Tablet Style */
 @media screen and (min-width:425px) {
-    #email, #phone, #linkedin, #home, #education, #experience, #interest {
+    #email, #phone, #linkedin, #home, #education, #experience, #projects {
         display: contents;
     }
 
