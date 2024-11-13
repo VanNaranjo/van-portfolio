@@ -51,15 +51,53 @@
 
         <main>
             <h2 class="animate__animated animate__backInLeft">My Projects</h2>
-            <img class = "VanPic" src="images/VanPic.png" alt="VanPic" id = "rightpic">
-            <section class="Intro Description">
-                <h3><b>ABOUT ME: </b></h3>
-                <p>
-                    I am currently studying Computer Programming and Analysis at Fanshawe College while working as a Process Assistant at Amazon. I enjoy solving complex problems and collaborating with a team to find effective solutions. In my role at Amazon, I monitor and resolve issues that delivery drivers may encounter, ensuring successful deliveries by coordinating with various dispatchers. Additionally, I utilize Excel to create tools for data manipulation, which aids our daily operations and enhances efficiency. My experience at Amazon has honed my ability to manage logistics, analyze data, and streamline processes, all of which complement my academic pursuits and passion for technology.
-                </p>
+            <div class="slider">
+                <div class="slide active">
+                    <section class="Intro Description">
+                        <h3><b>JAVA: Loan Calculator </b></h3>
+                        <p>
+                            •	Built a responsive and user-friendly GUI that enhances user experience, applying Java libraries like Swing or JavaFX to create a layout that displays all necessary loan information and calculations clearly.<br>
+                            •	Utilized object-oriented design techniques to build a modular and extensible codebase, supporting multiple student entries and making future updates or extensions more manageable.<br>
+                            •	Designed a data management system capable of saving and accessing detailed information for each student, facilitating easy tracking and calculation of loans.<br>
+                            •	Managed user interactions, such as button clicks and field updates, to ensure smooth functionality.<br>
+                            •	Enhanced accuracy by validating inputs and handling potential errors.
+                        </p>
+                        <img class ="LoanCalculator" src="images/Loan Calculator.png" alt="Loan calculator" id="loanpic">
 
-            </section>
+                    </section>
+                </div>
+                <div class="slide">
+                    <section>
+                        <h3><b>C++: Statistic Calculator </b></h3>
+                        <p>
+                            •	Developed skills in handling user input and reading data from files in C++, allowing the program to flexibly handle datasets from either manual input or external files, ensuring all data is properly loaded and ready for analysis.<br>
+                            •	Implemented statistical calculations for metrics like mean, median, variance, and standard deviation.<br>
+                            •	Created efficient algorithms to calculate modes, outliers, absolute deviations, and regression metrics.<br>
+                            •	Used C++ file handling to read and manage external data, ensuring compatibility with various data sources.<br>
+                            •	Analyzed statistical output for insights, applying concepts like outliers (2x and 3x) and regression analysis.
+
+                        </p>
+                        <img class ="StatsCalculator" src="images/stats.png" alt="Stats calculator" id = "statpic">
+                    </section>
+                </div>
+                <div class="slide">
+                    <section>
+                        <h3><b>PYTHON: Discord Bot (Currently in Development) </b></h3>
+                        <p>
+                            <strong>Discord bot will feature:</strong> <br>
+                            •	Users will be able to upload pictures to the bot, which will save them to a database. The bot will also provide commands to retrieve and display these images upon request, offering a seamless way to store and access visual content. <br>
+                            •	The bot will include a built-in feature to clear messages, helping maintain a tidy chat environment and improving the overall user experience by allowing users or administrators to remove unwanted or unnecessary messages.<br>
+                            •	he bot will offer a to-do list to help students stay organized by providing homework and deadline reminders, with data extracted directly from Fanshawe Online for accuracy.<br>
+                            •	And so on...
+                        </p>
+                        <img class ="DiscordBot" src="images/discordbot.png" alt="Discord bot" id = "statpic">
+                    </section>
+                </div>
+                <button id="prev" class="nav-button">←</button>
+                <button id="next" class="nav-button">→</button>
+            </div>
             <aside>
+                <img class = "VanPic" src="images/VanPic.png" alt="VanPic" id = "rightpic">
                 <p>Contact Me At: </p>
                 <ul>
                     <li>
@@ -87,25 +125,12 @@
         <p id = "rightfoot">Copyright &copy; 2024 Van Naranjo</p>
     </footer>
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script>
-        VANTA.NET({
-            el: "#animate-Bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: "#f5efeb",
-            backgroundColor: "#030512",
-            maxDistance: 30.00,
-            spacing: 30.00
-        });
+    <script src="script.js"></script>
 
-    </script>
+    
 </body>
 
 </html>
