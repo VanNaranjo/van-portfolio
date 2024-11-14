@@ -33,6 +33,7 @@ h1 {
 }
 
 h2 {
+    font-family: Sanchez, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.488rem;
     color: #20304a;
 }
@@ -127,13 +128,17 @@ aside ul {
     height: 200px;
 }
 
-#loanpic, #rightpic, #statpic, #correlationPic, #amazonLogo,#fanshawePic {
+#loanpic, #rightpic, #statpic, #correlationPic, #amazonLogo,#fanshawePic, #sqlpic   {
     display: block;
     max-width: 100%;  /* Ensures the image does not exceed container width */
     height: auto;     /* Maintains aspect ratio */
-    margin: 0 auto;   /* Centers the images */
     box-sizing: border-box;
 }
+
+#loanpic, #statpic, #sqlpic{
+    margin: 0 auto;
+}
+
 
 /* Tablet Style */
 @media screen and (min-width:425px) {
@@ -171,12 +176,12 @@ aside ul {
 /* Desktop Style */
 @media screen and (min-width:800px) {
     body {
-        margin: 10% 10% 10% 10%;
+        margin: 5% 5% 5% 5%;
         max-width:max-content;
     }
 
     #wrap {
-        margin: 20px;
+        margin: 10px;
     }
 
     main {
@@ -229,14 +234,14 @@ aside ul {
     }
 
     section {
-        grid-column: 2 / 3;
+        grid-column: 2 / 6;
         grid-row: 2 / 3;
         font-size: 20px;
-        margin: 20px;
+        margin: 10px;
     }
 
     aside {
-        margin: 30px 10px 10px 10px;
+        margin: 30px 30px 10px 30px;
         grid-column: 1 / 2;
         grid-row: 2/3;
     }
@@ -249,14 +254,21 @@ aside ul {
         display: none;
     }
 
-    #statpic{
-        width: 80%;
-    }
 
 }
 
 @media screen and (min-width:1500px){
-    
+
+    #wrap {
+        position: absolute;  /* Prevent resizing and keep it fixed */
+        left: 100px;          /* Keep a 10px margin from the left */
+        right: 100px;         /* Keep a 10px margin from the right */
+        top: 10px;
+        background-color: #ffffff;
+        box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
+        overflow: hidden;    /* Prevent overflow */
+    }
+
     .slider {
         position: relative;
         overflow: hidden;
@@ -271,15 +283,9 @@ aside ul {
         display: flex;
     }
 
-    #loanpic, #statpic {
-        display: block;
-        margin: auto;
-        max-width: 100%;
-    }
-    
     .nav-button {
         position: absolute;
-        top: 50%;
+        top: 70%;
         transform: translateY(-50%);
         font-size: 2em;
         background: none;
@@ -299,8 +305,31 @@ aside ul {
         right: 10px;
     }
 
-    #statpic, #loanpic{
-        width: 80%;
+
+    #statpic{
+        max-width: 75%;
     }
 
+
+    #sqlpic{
+        max-width: 80%;
+    }
+
+    .slide-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px; /* Space between text and image */
+    }
+
+    .Intro.Description {
+        flex: 1;
+        padding-right: 10px;
+    }
+
+    .slide-content img {
+        flex: 0.4;
+        max-width: 100%;
+        height: auto;
+    }
 }
