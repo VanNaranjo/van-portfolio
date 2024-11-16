@@ -8,7 +8,7 @@ VANTA.NET({
     scale: 1.00,
     scaleMobile: 1.00,
     color: "#f5efeb",
-    backgroundColor: "#030512",
+    backgroundColor: "#0e1527",
     maxDistance: 30.00,
     spacing: 30.00
 });
@@ -16,12 +16,12 @@ VANTA.NET({
 
 let header = document.querySelector('#header');
 let isScrolled = false;
+let headerPos = header.getBoundingClientRect().top;
 document.addEventListener('scroll', () => {
-    console.log(header.getBoundingClientRect().top , window.scrollY)
-    if (header.getBoundingClientRect().top <= window.scrollY) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+    let windowPos = window.scrollY;
+    if (windowPos >= headerPos && !header.classList.contains('scrolled')) {
+        header.classList.add("scrolled");
+    } else if( windowPos <= headerPos && header.classList.contains('scrolled')) {
+        header.classList.remove("scrolled");
     }
-})
-
+});
