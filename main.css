@@ -27,6 +27,7 @@ h1 {
     font-family: Holtwood One SC, Anton, sans-serif;
     letter-spacing: 5px;
     font-size: 2.986rem;
+    margin: 0;
     padding: 10px;
     margin-bottom: 0%;
     color: #f5efeb;
@@ -42,11 +43,31 @@ h3 {
     font-size: 2.074rem;
     color: #20304a;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 
 header {
+    position: sticky;
+    top: 0;
     background-color: #20304a;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    transition: all 0.3s;
 }
+
+header.scrolled {
+    flex-direction: row;
+}
+
+header.scrolled h1 {
+    width: 30%;
+    font-size: 2rem;
+}
+
 
 #wrap {
     margin: 0 2% 2% 2%;
@@ -68,8 +89,9 @@ nav ul {
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 700px;
 }
 
 nav li {
@@ -87,16 +109,38 @@ main section div a {
 }
 
 nav a {
-    color: #2f4156;
     font-size: 140%;
     font-weight: bold;
     text-decoration: none;
+    color: #b5bbc6;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: lightgray;
+}
+.banner .intro-line {
+    width: 380px;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 3.5rem;
+    margin: -30px;
+}
+.banner .intro-line span {
+    text-transform: uppercase;
+    text-wrap-mode: nowrap;
+    font-size: 0.9em;
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
     font-family: Sanchez, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
-    padding: 10px;
 }
 
 aside p {
@@ -128,7 +172,10 @@ aside ul {
     height: 200px;
 }
 
-#loanpic, #rightpic, #statpic, #correlationPic, #amazonLogo,#fanshawePic, #sqlpic   {
+#profilePic {
+    width: 48%;
+}
+#loanpic, #statpic, #correlationPic, #amazonLogo,#fanshawePic, #sqlpic   {
     display: block;
     max-width: 100%;  /* Ensures the image does not exceed container width */
     height: auto;     /* Maintains aspect ratio */
@@ -225,7 +272,6 @@ aside ul {
 
     nav ul li {
         height: 1rem;
-        margin: 0 10px 0 30px;
         padding: 10px;
     }
 
@@ -322,7 +368,7 @@ aside ul {
         gap: 20px; /* Space between text and image */
     }
 
-    .Intro.Description {
+    .intro-description {
         flex: 1;
         padding-right: 10px;
     }

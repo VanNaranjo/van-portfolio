@@ -13,19 +13,15 @@ VANTA.NET({
     spacing: 30.00
 });
 
-const slides = document.querySelectorAll('.slide');
-let currentIndex = 0;
 
-document.getElementById('next').addEventListener('click', () => {
-    changeSlide(currentIndex + 1);
-});
+let header = document.querySelector('#header');
+let isScrolled = false;
+document.addEventListener('scroll', () => {
+    console.log(header.getBoundingClientRect().top , window.scrollY)
+    if (header.getBoundingClientRect().top <= window.scrollY) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+})
 
-document.getElementById('prev').addEventListener('click', () => {
-    changeSlide(currentIndex - 1);
-});
-
-function changeSlide(index) {
-    slides[currentIndex].classList.remove('active');
-    currentIndex = (index + slides.length) % slides.length;
-    slides[currentIndex].classList.add('active');
-}
