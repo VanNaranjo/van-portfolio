@@ -8,131 +8,119 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Holtwood+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Holtwood+One+SC&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    
     
     <link href="main.css" rel = "stylesheet">
 </head>
 
 <body>
-<div id="animate-Bg">
-</div>
-    <div id = "wrap">
-        <header>
-            <h1 class="animate__animated animate__swing">Van's Resume</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i id="hsymbol1" class="fa-solid fa-house"></i>
-                <div id = "home">
-                    Home
-                </div>
-                </a></li>
-                <li><a href="education.html"><i id="hsymbol2" class="fa-solid fa-laptop-code"></i>
-                <div id = "education">
-                    Education
-                </div>
-                </a></li>
-                <li><a href="experience.html"><i id="hsymbol3" class="fa-solid fa-solid fa-book"></i>
-                <div id = "experience">
-                    Experience
-                </div>
-                </a></li>
-                <li><a href="projects.html"><i id="hsymbol4" class="fa-solid fa-solid fa-wrench"></i>
-                <div id = "projects">
-                    Projects
-                </div>
-                </a></li>
-            </ul>
-        </nav>
-
-        <main>
-            <h2 class="animate__animated animate__backInLeft">My Projects</h2>
-            <div class="slider">
-                <div class="slide active">
-                    <section class="Intro Description">
-                        <h3><b>JAVA: Loan Calculator </b></h3>
-                        <p>
-                            •	Developed a responsive and intuitive graphical user interface (GUI) using Java libraries such as Swing or JavaFX, ensuring a seamless user experience that effectively displays key loan information and calculations in a clear, organized layout.<br>
-                            •	Leveraged object-oriented programming principles to design a modular, scalable, and maintainable codebase, allowing for easy future updates and enabling support for multiple student entries without compromising code quality.<br>
-                            •	Engineered a comprehensive data management system that efficiently stores and retrieves detailed student information, facilitating accurate tracking and computation of student loans, ensuring that data was accessible and reliable.
-                            <br>
-                            •	Handled user interactions, including button clicks, input field updates, and dynamic content rendering, ensuring smooth and responsive functionality across the entire application, with immediate feedback for users.<br>
-                            •	Implemented robust input validation techniques to minimize errors and enhance accuracy, preventing invalid data entry and ensuring that all user inputs were processed correctly, thereby improving the reliability and stability of the application.
-                        </p>
-                        <img class ="LoanCalculator" src="images/Loan Calculator.png" alt="Loan calculator" id="loanpic">
-
-                    </section>
-                </div>
-                <div class="slide">
-                    <section>
-                        <h3><b>C++: Statistic Calculator </b></h3>
-                        <p>
-                            •	Gained expertise in managing user input and processing data from files in C++, enabling the program to effectively handle data from both manual inputs and external file sources, ensuring that all datasets are accurately loaded and prepared for detailed analysis.<br>
-                            •	Developed and implemented a wide range of statistical calculations, including measures of central tendency like mean and median, as well as measures of variability such as variance and standard deviation, to provide a comprehensive understanding of the dataset.<br>
-                            •	Designed and optimized algorithms to identify and calculate key statistical elements such as modes, outliers, absolute deviations, and regression metrics, ensuring the program could generate useful insights from complex data sets.<br>
-                            •	Utilized C++ file handling techniques to read and manage data from external sources, ensuring seamless integration and compatibility with various data formats, and allowing for easy scaling of the program to accommodate different datasets.<br>
-                            •	Analyzed and interpreted the statistical output, applying advanced statistical concepts like identifying outliers (using 2x and 3x thresholds) and performing regression analysis, to draw meaningful insights and support data-driven decision-making.
-
-                        </p>
-                        <img class ="StatsCalculator" src="images/stats.png" alt="Stats calculator" id = "statpic">
-                    </section>
-                </div>
-                <div class="slide">
-                    <section>
-                        <h3><b>PYTHON: Discord Bot (Currently in Development) </b></h3>
-                        <p>
-                            <strong>Discord bot will feature:</strong> <br>
-                            •	Users will be able to upload pictures to the bot, which will save them to a database. The bot will also provide commands to retrieve and display these images upon request, offering a seamless way to store and access visual content. <br>
-                            •	Will include a built-in feature to clear messages, helping maintain a tidy chat environment and improving the overall user experience by allowing users or administrators to remove unwanted or unnecessary messages.<br>
-                            •	A dynamic to-do list will be integrated to help students stay organized by offering timely reminders for homework assignments and upcoming deadlines, with data automatically pulled from Fanshawe Online to ensure accuracy and up-to-date information.<br>
-                            •	And so on...
-                        </p>
-                        <img class ="DiscordBot" src="images/discordbot.png" alt="Discord bot" id = "statpic">
-                    </section>
-                </div>
-                <div class="slide">
-                    <section>
-                        <h3><b>SQL: Creating and Optimizing Databases </b></h3>
-                        <p>
-                            •   Designed and implemented the database structure based on detailed project requirements, ensuring it was robust, scalable, and flexible to meet both current needs and potential future modifications. <br>
-                            •	Applied indexing techniques strategically to optimize query performance, enabling faster data retrieval, especially when handling large datasets, and improving overall database efficiency.<br>
-                            •	Developed and utilized stored procedures to encapsulate complex SQL queries and operations, which helped reduce code duplication, ensured better maintainability, enhanced data security, and simplified the execution of recurring tasks.<br>
-                            •	Managed and optimized database transactions to guarantee data integrity, using rollback and commit functionality to handle potential errors, prevent data corruption, and ensure consistent and reliable operations across the system.<br>
-                            
-                        </p>
-                        <img class ="SQLDatabase" src="images/database.png" alt="SQL Database" id = "sqlpic">
-                    </section>
-                </div>
-                <button id="prev" class="nav-button">←</button>
-                <button id="next" class="nav-button">→</button>
-            </div>
-            <aside>
-                <img class = "VanPic" src="images/VanPic.png" alt="VanPic" id = "rightpic">
-                <p>Contact Me At: </p>
+    <header id="header">
+        <div class="header-container">
+            <h1><a href="index.html">Van's Resume</a></h1>
+            <nav class="nav">
                 <ul>
-                    <li>
-                        <a id = "ref1" href="v_naranjo@fanshaweonline.ca">
-                            <i id="fsymbol1" class="fa-solid fa-envelope"></i> <span id ="email">v_naranjo@fanshaweonline.ca</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id = "ref2" href="Phone:2269792019"><i id="fsymbol2" class="fa-solid fa-phone">
-                            </i> <span id = "phone"> Phone: 2269792019</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a id = "ref3" href="https://www.linkedin.com/in/vannaranjo">
-                            <i id="fsymbol3" class="fa-brands fa-linkedin"></i> <span id="linkedin"> www.linkedin.com/in/vannaranjo</span>
-                        </a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
                 </ul>
-            </aside>
-        </main>
-    </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="slider">
+            <div class="slide active">
+                <section class="intro-description project">
+                    <h3>JAVA: Loan Calculator</h3>
+                    <img class ="LoanCalculator" src="images/Loan Calculator.png" alt="Loan calculator" id="loanpic">
+                    <ul>
+                        <li>
+                        Developed a responsive and intuitive graphical user interface (GUI) using Java libraries such as Swing or JavaFX, ensuring a seamless user experience that effectively displays key loan information and calculations in a clear, organized layout.</li>
+                        <li>
+                            Leveraged object-oriented programming principles to design a modular, scalable, and maintainable codebase, allowing for easy future updates and enabling support for multiple student entries without compromising code quality.</li>
+                        <li>
+                            Engineered a comprehensive data management system that efficiently stores and retrieves detailed student information, facilitating accurate tracking and computation of student loans, ensuring that data was accessible and reliable.</li>
+                        <li>
+                            Handled user interactions, including button clicks, input field updates, and dynamic content rendering, ensuring smooth and responsive functionality across the entire application, with immediate feedback for users.</li>
+
+                        <li>
+                            Implemented robust input validation techniques to minimize errors and enhance accuracy, preventing invalid data entry and ensuring that all user inputs were processed correctly, thereby improving the reliability and stability of the application.</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="slide">
+                <section class="project">
+                    <h3>C++: Statistic Calculator</h3>
+                    <img class ="StatsCalculator" src="images/stats.png" alt="Stats calculator" id = "statpic">
+                    <ul>
+                        <li>Gained expertise in managing user input and processing data from files in C++, enabling the program to effectively handle data from both manual inputs and external file sources, ensuring that all datasets are accurately loaded and prepared for detailed analysis.</li>
+                        <li>Developed and implemented a wide range of statistical calculations, including measures of central tendency like mean and median, as well as measures of variability such as variance and standard deviation, to provide a comprehensive understanding of the dataset.</li>
+                        <li>Designed and optimized algorithms to identify and calculate key statistical elements such as modes, outliers, absolute deviations, and regression metrics, ensuring the program could generate useful insights from complex data sets.</li>
+                        <li>Utilized C++ file handling techniques to read and manage data from external sources, ensuring seamless integration and compatibility with various data formats, and allowing for easy scaling of the program to accommodate different datasets.</li>
+                        <li>Analyzed and interpreted the statistical output, applying advanced statistical concepts like identifying outliers (using 2x and 3x thresholds) and performing regression analysis, to draw meaningful insights and support data-driven decision-making.</li>
+                    </ul>
+
+                </section>
+            </div>
+            <div class="slide">
+                <section class="project">
+                    <h3>PYTHON: Discord Bot (Currently in Development)</h3>
+                    <img class ="DiscordBot" src="images/discordbot.png" alt="Discord bot" id = "botpic">
+                    <ul>
+                        <li>Users will be able to upload pictures to the bot, which will save them to a database. The bot will also provide commands to retrieve and display these images upon request, offering a seamless way to store and access visual content. </li>
+                        <li>Will include a built-in feature to clear messages, helping maintain a tidy chat environment and improving the overall user experience by allowing users or administrators to remove unwanted or unnecessary messages.</li>
+                        <li>A dynamic to-do list will be integrated to help students stay organized by offering timely reminders for homework assignments and upcoming deadlines, with data automatically pulled from Fanshawe Online to ensure accuracy and up-to-date information.</li>
+                        <li>And so on...</li>
+                    </ul>
+
+                </section>
+            </div>
+            <div class="slide">
+                <section class="project">
+                    <h3>SQL: Creating and Optimizing Databases </h3>
+                    <img class ="SQLDatabase" src="images/database.png" alt="SQL Database" id = "sqlpic">
+                    <ul>
+                        <li>Designed and implemented the database structure based on detailed project requirements, ensuring it was robust, scalable, and flexible to meet both current needs and potential future modifications.</li>
+                        <li>Applied indexing techniques strategically to optimize query performance, enabling faster data retrieval, especially when handling large datasets, and improving overall database efficiency.</li>
+                        <li>Developed and utilized stored procedures to encapsulate complex SQL queries and operations, which helped reduce code duplication, ensured better maintainability, enhanced data security, and simplified the execution of recurring tasks.</li>
+                        <li>Managed and optimized database transactions to guarantee data integrity, using rollback and commit functionality to handle potential errors, prevent data corruption, and ensure consistent and reliable operations across the system.</li>
+
+                    </ul>
+                    
+                </section>
+            </div>
+            <button id="prev" class="nav-button">←</button>
+            <button id="next" class="nav-button">→</button>
+        </div>
+        <footer class="contact">
+            <ul>
+                <li>
+                    <a id="ref1" href="mailto:v_naranjo@fanshaweonline.ca" aria-label="Send an email to v_naranjo@fanshaweonline.ca">
+                        <i id="fsymbol1" class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span id="email">v_naranjo@fanshaweonline.ca</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ref2" href="tel:+12899413872" aria-label="Call (289) 941-3872">
+                        <i id="fsymbol2" class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span id="phone">Phone: (289) 941-3872</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ref3" href="https://www.linkedin.com/in/vannaranjo" aria-label="Visit LinkedIn profile of Vannaranjo" target="_blank" rel="noopener noreferrer">
+                        <i id="fsymbol3" class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span id="linkedin">www.linkedin.com/in/vannaranjo</span>
+                    </a>
+                </li>
+            </ul>
+            
+        </footer>
+    </main>
 
 
     

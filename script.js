@@ -15,7 +15,6 @@ VANTA.NET({
 
 
 let header = document.querySelector('#header');
-let isScrolled = false;
 let headerPos = header.getBoundingClientRect().top;
 document.addEventListener('scroll', () => {
     let windowPos = window.scrollY;
@@ -25,3 +24,10 @@ document.addEventListener('scroll', () => {
         header.classList.remove("scrolled");
     }
 });
+
+let skillBars = document.querySelectorAll('.bar .inner');
+if (skillBars.length > 0) {
+    skillBars.forEach(bar => {
+       bar.classList.remove('no-width');
+    });
+}

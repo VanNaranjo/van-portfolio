@@ -8,8 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Holtwood+One+SC&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Holtwood+One+SC&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
@@ -18,94 +17,65 @@
 </head>
 
 <body>
-<div id="animate-Bg">
-</div>
     <div id = "wrap">
-        <header>
-            <h1 class="animate__animated animate__swing">Van's Resume</h1>
+        <header id="header">
+            <div class="header-container">
+                <h1><a href="index.html">Van's Resume</a></h1>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html" >Education</a></li>
+                        <li><a href="experience.html" class="active">Experience</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i id="hsymbol1" class="fa-solid fa-house"></i>
-                <div id = "home">
-                    Home
-                </div>
-                </a></li>
-                <li><a href="education.html"><i id="hsymbol2" class="fa-solid fa-laptop-code"></i>
-                <div id = "education">
-                    Education
-                </div>
-                </a></li>
-                <li><a href="experience.html"><i id="hsymbol3" class="fa-solid fa-solid fa-book"></i>
-                <div id = "experience">
-                    Experience
-                </div>
-                </a></li>
-                <li><a href="projects.html"><i id="hsymbol4" class="fa-solid fa-solid fa-wrench"></i>
-                <div id = "projects">
-                    Projects
-                </div>
-                </a></li>
-            </ul>
-        </nav>
 
-        <h2 class="animate__animated animate__backInLeft">My Work Experience</h2>
+        <h2>My Work Experience</h2>
         <main>
             <section class="Intro Description">
                <img src="images/amazon-logo.webp" alt="amazon-logo" id="amazonLogo">
                <h3>Amazon Logistics at DLC4 - Process Assistant</h3>
-               <p>
-                •	Promoted to supervisor due to consistently exceeding performance KPIs, where I leveraged project coordination and team management skills to enhance team productivity and workflow <br>
-                •	Developed Excel-based reporting tools, streamlining data analysis, tracking, and visualization, which led to a 30% improvement in KPI monitoring and reporting accuracy. <br>
-                •	Coordinated project activities, focusing on safety protocol adherence and incident resolution, resulting in a 40% reduction in Delivery Not Received errors. <br>
-                •	Acted as the primary contact for incident analysis and resolution, effectively improving response times and safety benchmarks by 10% through process improvements and team training. <br>
-                •	Supported and trained over 5 associates monthly in standards, best practices, and incident management protocols, contributing to a 20% productivity boost.
-                
-               </p>
+               <ul>
+                    <li>Promoted to supervisor due to consistently exceeding performance KPIs, where I leveraged project coordination and team management skills to enhance team productivity and workflow <br>
+                    </li>
+                    <li>Developed Excel-based reporting tools, streamlining data analysis, tracking, and visualization, which led to a 30% improvement in KPI monitoring and reporting accuracy. </li>
+                    <li>Coordinated project activities, focusing on safety protocol adherence and incident resolution, resulting in a 40% reduction in Delivery Not Received errors.</li>
+                    <li>Acted as the primary contact for incident analysis and resolution, effectively improving response times and safety benchmarks by 10% through process improvements and team training.</li>
+                    <li>Supported and trained over 5 associates monthly in standards, best practices, and incident management protocols, contributing to a 20% productivity boost.</li>
+
+               </ul>
             </section>
-            <aside>
-                <img class = "VanPic" src="images/VanPic.png" alt="VanPic" id = "rightpic">
-                <p>Contact Me At: </p>
+            <footer class="contact">
                 <ul>
                     <li>
-                        <a id = "ref1" href="v_naranjo@fanshaweonline.ca">
-                            <i id="fsymbol1" class="fa-solid fa-envelope"></i> <span id ="email">v_naranjo@fanshaweonline.ca</span>
+                        <a id="ref1" href="mailto:v_naranjo@fanshaweonline.ca" aria-label="Send an email to v_naranjo@fanshaweonline.ca">
+                            <i id="fsymbol1" class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <span id="email">v_naranjo@fanshaweonline.ca</span>
                         </a>
                     </li>
                     <li>
-                        <a id = "ref2" href="Phone:2269792019"><i id="fsymbol2" class="fa-solid fa-phone">
-                            </i> <span id = "phone"> Phone: 2269792019</span>
+                        <a id="ref2" href="tel:+12899413872" aria-label="Call (289) 941-3872">
+                            <i id="fsymbol2" class="fa-solid fa-phone" aria-hidden="true"></i>
+                            <span id="phone">Phone: (289) 941-3872</span>
                         </a>
                     </li>
                     <li>
-                        <a id = "ref3" href="https://www.linkedin.com/in/vannaranjo" target="_blank">
-                            <i id="fsymbol3" class="fa-brands fa-linkedin"></i> <span id="linkedin"> www.linkedin.com/in/vannaranjo</span>
+                        <a id="ref3" href="https://www.linkedin.com/in/vannaranjo" aria-label="Visit LinkedIn profile of Vannaranjo" target="_blank" rel="noopener noreferrer">
+                            <i id="fsymbol3" class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span id="linkedin">www.linkedin.com/in/vannaranjo</span>
                         </a>
                     </li>
                 </ul>
-            </aside>
+                
+            </footer>
         </main>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script>
-        VANTA.NET({
-            el: "#animate-Bg",
-            mouseControls: true,
-            touchControls: true,
-            gyroControls: false,
-            minHeight: 200.00,
-            minWidth: 200.00,
-            scale: 1.00,
-            scaleMobile: 1.00,
-            color: "#f5efeb",
-            backgroundColor: "#030512",
-            maxDistance: 30.00,
-            spacing: 30.00
-        });
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
