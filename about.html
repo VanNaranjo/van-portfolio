@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Resume</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="main.css" rel = "stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-container">
+            <h1><a href="index.html">Van's Resume</a></h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <h2 id="title-education">My Education and Experience</h2>
+        <section class="intro-description">
+            <div class="about-container">
+                <div class="about-info">
+                    <img class="about-img" src="images/FanshaweLogo.png" alt="FanshaweLogo" id="fanshawePic">
+                    <h3 class="about-title">Fanshawe College<hr></h3>
+                    <ul class="about-text">
+                        <li><b>Field of Study:</b> Computer Programming and Analysis</li>
+                        <li><b>Current Education Level:</b> 2st-year College Student</li>
+                        <li><b>GPA:</b> 4.15</li>
+                        <li><b>Honors & Awards:</b> Deans Honors Roll for both first and second semesters</li>
+                        <li><b>Programming Languages Learned:</b> Java, C++, SQL, Python ,Javascript, HTML, CSS</li>
+                        <li>Designed a statistical data analysis program, implementing multiple algorithmic approaches</li>
+                        <li>Completed projects involving data analysis and reporting, utilizing SQL and programming for data-driven insights.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-info">
+                    <img class="about-img" src="images/Correlation_One_Logo.jpg" alt="CorrelationOne" id="correlationPic">
+                    <h3 class="about-title">Training and Competition by Correlation One<hr></h3>
+                    <ul class="about-text">
+                        <li><b>Participated in: </b> A 16-week data analytics program focused on real business cases to address business and technical issues.</li>
+                        <li><b>Built:</b> A data pipeline utilizing pivot tables, graphs, and dashboards to present results using Excel and Tableau.</li>
+                        <li><b>Collaborated:</b> With teammates to research marketing campaigns for Specialty Foods by analyzing 2019-2020 data and determining cost implications.</li>
+                        <li><b>Analyzed:</b> Student grades at the Open University to track performance across various programs, aiming to reduce dropout rates and enhance student engagement and learning.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-container">
+                <div class="about-info">
+                    <img class="about-img" src="images/amazon-logo.webp" alt="amazon-logo" id="amazonLogo">
+                    <h3 class="about-title">Amazon Logistics at DLC4 - Process Assistant<hr></h3>
+                    <ul class="about-text">
+                        <li>Promoted to supervisor due to consistently exceeding performance KPIs, where I leveraged project coordination and team management skills to enhance team productivity and workflow <br>
+                        </li>
+                        <li>Developed Excel-based reporting tools, streamlining data analysis, tracking, and visualization, which led to a 30% improvement in KPI monitoring and reporting accuracy. </li>
+                        <li>Coordinated project activities, focusing on safety protocol adherence and incident resolution, resulting in a 40% reduction in Delivery Not Received errors.</li>
+                        <li>Acted as the primary contact for incident analysis and resolution, effectively improving response times and safety benchmarks by 10% through process improvements and team training.</li>
+                        <li>Supported and trained over 5 associates monthly in standards, best practices, and incident management protocols, contributing to a 20% productivity boost.</li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="contact">
+            <ul>
+                <li>
+                    <a id="ref1" href="mailto:v_naranjo@fanshaweonline.ca" aria-label="Send an email to v_naranjo@fanshaweonline.ca">
+                        <i id="fsymbol1" class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <span id="email">v_naranjo@fanshaweonline.ca</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ref2" href="tel:+12899413872" aria-label="Call (289) 941-3872">
+                        <i id="fsymbol2" class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <span id="phone">Phone: (289) 941-3872</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ref3" href="https://www.linkedin.com/in/vannaranjo" aria-label="Visit LinkedIn profile of Vannaranjo" target="_blank" rel="noopener noreferrer">
+                        <i id="fsymbol3" class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                        <span id="linkedin">www.linkedin.com/in/vannaranjo</span>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="about.js"></script>
+
+</body>
+
+</html>
