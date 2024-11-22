@@ -340,7 +340,7 @@ main {
 /* Mobile Style */
 @media screen and (min-width:425px) {
     .nav ul li {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
     .banner .intro-line {
         font-size: 2em;
