@@ -228,10 +228,11 @@ main {
 
 .skill .bar .inner span {
     position: absolute;
-    top: -22px;
+    top: -28px;
     right: 0;
     font-size: 0.8em;
     animation: delayShow 1.8s;
+    background-color: #2b364f;
 }
 
 .skills, .about {
