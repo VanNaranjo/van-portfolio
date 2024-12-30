@@ -1,0 +1,22 @@
+{
+  "name": "van-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "about.js",
+  "scripts": {
+    "compile" : "sass style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanNaranjo/van-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanNaranjo/van-portfolio/issues"
+  },
+  "homepage": "https://github.com/VanNaranjo/van-portfolio#readme",
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}
