@@ -1,0 +1,86 @@
+{
+  "projectId": "c955f02c-166b-4097-ba05-cc71033ad217",
+  "shape": "package",
+  "pkg": "van-portfolio-ds",
+  "globalName": "VanPortfolioDS",
+  "buildCmd": "cd .design-sync/kit && npm ci && npm run build",
+  "cssEntry": "dist/style.css",
+  "runtimeFontPrefixes": [
+    "Holtwood One SC",
+    "Roboto",
+    "Sanchez",
+    "Font Awesome"
+  ],
+  "overrides": {
+    "SiteHeader": {
+      "cardMode": "single",
+      "primaryStory": "HomeActive",
+      "viewport": "1200x800"
+    },
+    "HeroBanner": {
+      "cardMode": "single",
+      "primaryStory": "Default",
+      "viewport": "1200x800"
+    },
+    "SkillBar": {
+      "cardMode": "single",
+      "primaryStory": "Levels",
+      "viewport": "1200x800"
+    },
+    "SkillsPanel": {
+      "cardMode": "single",
+      "primaryStory": "ProgrammingLanguages",
+      "viewport": "1200x800"
+    },
+    "ToolList": {
+      "cardMode": "single",
+      "primaryStory": "Tools",
+      "viewport": "1200x800"
+    },
+    "HighlightList": {
+      "cardMode": "single",
+      "primaryStory": "ExtraSkills",
+      "viewport": "1200x800"
+    },
+    "ExtraSkills": {
+      "cardMode": "single",
+      "primaryStory": "ToolsAndHighlights",
+      "viewport": "1200x800"
+    },
+    "ExperienceCard": {
+      "cardMode": "single",
+      "primaryStory": "AlternatingPair",
+      "viewport": "1200x1500"
+    },
+    "ProjectCard": {
+      "cardMode": "single",
+      "primaryStory": "LoanCalculator",
+      "viewport": "1200x1150"
+    },
+    "ProjectSlider": {
+      "cardMode": "single",
+      "primaryStory": "Projects",
+      "viewport": "1200x1100"
+    },
+    "ContactBar": {
+      "cardMode": "single",
+      "primaryStory": "AllChannels",
+      "viewport": "1200x800"
+    },
+    "PageMain": {
+      "cardMode": "single",
+      "primaryStory": "SkillsPage",
+      "viewport": "1200x900"
+    }
+  },
+  "provider": {
+    "component": "PageMain",
+    "props": {
+      "style": {
+        "background": "#1a1b1e",
+        "padding": "16px 0"
+      }
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

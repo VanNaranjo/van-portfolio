@@ -1,0 +1,23 @@
+{
+  "name": "van-portfolio-ds",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React wrappers around the van-portfolio site's markup and compiled style.scss, for Claude Design.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "esbuild": "0.24.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.6.3"
+  }
+}
