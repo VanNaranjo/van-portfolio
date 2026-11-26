@@ -1,5 +1,3 @@
-// All portfolio content lives here. Update this file when the resume changes.
-
 export const contact = {
   email: 'vannaranjo123@gmail.com',
   phoneDisplay: '289-941-3872',
@@ -158,7 +156,14 @@ export const interests = [
   },
 ];
 
-export type ProjectTag = 'java' | 'cpp' | 'python' | 'sql' | 'fullstack';
+export type ProjectTag = 'personal' | 'school';
+
+export interface MediaItem {
+  src: string;
+  alt: string;
+  kind?: 'image' | 'video';
+  caption?: string;
+}
 
 export interface Project {
   id: string;
@@ -167,6 +172,8 @@ export interface Project {
   tags: ProjectTag[];
   image: string;
   imageAlt: string;
+  /** Extra screenshots/videos shown in the full-screen viewer. Defaults to just `image`. */
+  gallery?: MediaItem[];
   summary: string;
   bullets: string[];
   link?: string;
@@ -179,7 +186,7 @@ export const projects: Project[] = [
     id: 'pc-build-helper',
     title: 'PC Build Helper',
     tagLine: 'C# · MVC · JAVASCRIPT',
-    tags: ['fullstack'],
+    tags: ['personal'],
     image: 'images/PC Helper.png',
     imageAlt: 'PC Build Helper app',
     summary: 'Full-stack app that checks part compatibility in real time while you build a PC.',
@@ -188,14 +195,13 @@ export const projects: Project[] = [
       'Real-time compatibility checks so selected parts work together.',
       'Built to scale: new part categories and components drop in easily.',
     ],
-    link: 'https://vanpcbuilder.azurewebsites.net/BuildPC.html',
     featured: true,
   },
   {
     id: 'loan-calculator',
     title: 'Loan Calculator',
     tagLine: 'JAVA · JAVAFX',
-    tags: ['java'],
+    tags: ['school'],
     image: 'images/Loan Calculator.png',
     imageAlt: 'Loan calculator app',
     summary: 'Student loan calculator with a clear GUI and robust input validation.',
@@ -210,7 +216,7 @@ export const projects: Project[] = [
     id: 'statistic-calculator',
     title: 'Statistic Calculator',
     tagLine: 'C++',
-    tags: ['cpp'],
+    tags: ['school'],
     image: 'images/stats.png',
     imageAlt: 'Statistics calculator output',
     summary: 'Descriptive statistics, outlier detection and regression from file or manual input.',
@@ -224,7 +230,7 @@ export const projects: Project[] = [
     id: 'databases',
     title: 'Creating & Optimizing Databases',
     tagLine: 'SQL SERVER',
-    tags: ['sql'],
+    tags: ['school'],
     image: 'images/database.png',
     imageAlt: 'Database diagram',
     summary: 'Schemas, indexes, stored procedures and transactions built from project requirements.',
@@ -236,27 +242,42 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    id: 'discord-bot',
-    title: 'Discord Bot',
-    tagLine: 'PYTHON',
-    tags: ['python'],
-    image: 'images/discordbot.png',
-    imageAlt: 'Discord bot',
-    summary: 'Discord bot for storing images, clearing messages and homework reminders.',
+    id: 'wordle',
+    title: 'Daily Wordle',
+    tagLine: 'C# · gRPC · WPF',
+    tags: ['school'],
+    image: 'images/wordle.png',
+    imageAlt: 'Wordle game board',
+    summary: 'Daily Wordle game with a WPF client and two gRPC services.',
     bullets: [
-      'Store and retrieve images through bot commands.',
-      'Built-in message clearing to keep channels tidy.',
-      'Homework reminders pulled from Fanshawe Online.',
+      'WPF desktop client with an on-screen keyboard that colours letters as you guess.',
+      'Bidirectional gRPC streaming checks each guess and tracks used letters in real time.',
+      'Separate word service picks the daily word and validates guesses against a dictionary.',
+      'Daily player stats and guess distribution saved to JSON, protected by a mutex for concurrent players.',
     ],
-    inDevelopment: true,
+  },
+  {
+    id: 'cupid-pigeon',
+    title: 'Cupid Pigeon',
+    tagLine: 'REACT · C# · ASP.NET CORE · MONGODB',
+    tags: ['school'],
+    image: 'images/cupid-pigeon-signup.png',
+    imageAlt: 'Cupid Pigeon sign-up screen',
+    gallery: [
+      { src: 'images/cupid-pigeon-signup.png', alt: 'Cupid Pigeon sign-up screen', caption: 'Mobile sign-up screen' },
+      { src: 'images/cupid-pigeon-demo.mp4', alt: 'Cupid Pigeon demo video', kind: 'video', caption: 'App walkthrough' },
+    ],
+    summary: 'Dating web app with a React front end and an ASP.NET Core REST API backed by MongoDB.',
+    bullets: [
+      'React (Vite, Tailwind CSS, daisyUI) front end with sign-up, login, email verification and profile creation flows.',
+      'ASP.NET Core REST API with MongoDB repositories for users and dating profiles.',
+      'Secure accounts: hashed passwords, cookie-based authentication and a 10-minute emailed verification code sent with MailKit.',
+      'Mobile-first profile builder covering salutation, date of birth, gender, photo and preferred contact method.',
+    ],
   },
 ];
 
-export const projectFilters: { id: 'all' | ProjectTag; label: string }[] = [
-  { id: 'all', label: 'All' },
-  { id: 'java', label: 'Java' },
-  { id: 'cpp', label: 'C++' },
-  { id: 'python', label: 'Python' },
-  { id: 'sql', label: 'SQL' },
-  { id: 'fullstack', label: 'Full-stack' },
+export const projectFilters: { id: ProjectTag; label: string }[] = [
+  { id: 'personal', label: 'Personal Project' },
+  { id: 'school', label: 'School Work' },
 ];

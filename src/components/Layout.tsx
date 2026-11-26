@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { Header } from './Header';
 
-/** Shared page shell. Each page renders its own <main> content and footer. */
 export function Layout() {
   const { pathname } = useLocation();
 

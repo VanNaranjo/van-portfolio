@@ -4,8 +4,6 @@ import { Experience } from './pages/Experience';
 import { Home } from './pages/Home';
 import { Projects } from './pages/Projects';
 
-// HashRouter keeps URLs like /van-portfolio/#/projects working on GitHub Pages,
-// which has no server-side fallback for client routes.
 export function App() {
   return (
     <HashRouter>

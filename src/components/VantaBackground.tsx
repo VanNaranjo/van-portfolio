@@ -1,9 +1,5 @@
 import { useEffect, useRef } from 'react';
 
-/**
- * Animated network background (Vanta.js). three.js and Vanta are loaded on demand
- * so they don't block the first paint, and skipped entirely for reduced motion.
- */
 export function VantaBackground() {
   const ref = useRef<HTMLDivElement>(null);
 

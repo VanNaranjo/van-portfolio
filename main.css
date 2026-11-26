@@ -177,7 +177,7 @@ main {
     font-size: 1rem;
 }
 
-/* About Me */
+
 
 .about-info{
     display: grid;
@@ -207,7 +207,7 @@ main {
 }
 
 
-/* Skills */
+
 .prog-skills {
     background-color: #2b364f;
     padding: 20px 15px;
@@ -313,7 +313,7 @@ main {
 
 
 
-/* Project page styles */
+
 .project {
     margin: 3em 1.5em 2em;
 }
@@ -337,7 +337,7 @@ main {
     display: none;
 }
 
-/* Mobile Style */
+
 @media screen and (min-width:425px) {
     .nav ul li {
         font-size: 1.2em;
@@ -350,7 +350,7 @@ main {
     }
 }
 
-/* Tablet Style */
+
 @media screen and (min-width:768px) {
     h1 {
         font-size: 3rem;
@@ -436,7 +436,7 @@ main {
         font-size: 1.2em;
     }
     
-    /* Project page style */
+
     .slider {
         position: relative;
         overflow: hidden;
@@ -537,7 +537,7 @@ main {
         height: 600px;
     }
 
-    /* About */
+
     .about-info{
         gap: 3%;
         grid-template-columns: 35% 62%;
@@ -589,7 +589,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 20px; /* Space between text and image */
+        gap: 20px;
     }
 
     .slide-content img {

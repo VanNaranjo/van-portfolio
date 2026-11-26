@@ -9,8 +9,8 @@ type FilterId = (typeof projectFilters)[number]['id'];
 
 export function Projects() {
   usePageTitle('Projects | Van Naranjo');
-  const [filter, setFilter] = useState<FilterId>('all');
-  const shown = projects.filter((p) => filter === 'all' || p.tags.includes(filter));
+  const [filter, setFilter] = useState<FilterId>('personal');
+  const shown = projects.filter((p) => p.tags.includes(filter));
 
   return (
     <>
@@ -24,7 +24,7 @@ export function Projects() {
           </p>
         </section>
 
-        <div className="container filters" role="group" aria-label="Filter projects by language">
+        <div className="container filters" role="group" aria-label="Filter projects by category">
           {projectFilters.map((f) => (
             <button key={f.id} type="button" aria-pressed={filter === f.id} onClick={() => setFilter(f.id)}>
               {f.label}
